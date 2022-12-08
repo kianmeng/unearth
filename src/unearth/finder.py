@@ -54,7 +54,7 @@ class PackageFinder:
         no_binary (Iterable[str]): The names of the packages to disallow wheels
         only_binary (Iterable[str]): The names of the packages to disallow non-wheels
         prefer_binary (bool): Whether to prefer binary packages even if
-            newer sdist pacakges exist.
+            newer sdist packages exist.
         respect_source_order (bool): If True, packages from the source coming earlier
             are more preferred, even if they have lower versions.
         verbosity (int): The verbosity level.

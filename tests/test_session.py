@@ -73,7 +73,7 @@ def test_session_auth_from_prompting(pypi_auth, session, monkeypatch):
     assert not any(r.status_code == 401 for r in resp.history)
 
 
-def test_session_auth_warn_agains_wrong_credentials(pypi_auth, session, caplog):
+def test_session_auth_warn_against_wrong_credentials(pypi_auth, session, caplog):
     caplog.set_level(logging.WARNING)
     with mock.patch.object(
         MultiDomainBasicAuth,
